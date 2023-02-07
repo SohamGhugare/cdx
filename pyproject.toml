@@ -5,10 +5,12 @@ description = "A powerful CLI tool for aliasing your project paths"
 authors = ["SohamGhugare <soham.ghugare@gmail.com>"]
 readme = "README.md"
 
+[tool.poetry.scripts]
+cdx = "cdx.main:app"
+
 [tool.poetry.dependencies]
 python = "^3.10"
 typer = {extras = ["all"], version = "^0.7.0"}
-
 
 [build-system]
 requires = ["poetry-core"]
